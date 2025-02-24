@@ -1,0 +1,63 @@
+<div class="container">
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Welcome to <span>Angular POC</span></h1>
+    <p>Discover a modern, scalable, and high-performance Angular application.</p>
+    <button routerLink="/dashboard">🚀 Get Started</button>
+  </header>
+
+  <!-- Dark Mode Toggle -->
+<div class="toggle-container">
+  <label class="switch">
+    <input type="checkbox" (change)="toggleDarkMode()">
+    <span class="slider round"></span>
+  </label>
+  <span>{{ isDarkMode ? '🌙 Dark Mode' : '☀️ Light Mode' }}</span>
+</div>
+
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature-card">
+      <i class="fas fa-cubes"></i>
+      <h2>Modular Architecture</h2>
+      <p>Built with Angular Modules to ensure flexibility and maintainability.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-layer-group"></i>
+      <h2>Reusable Components</h2>
+      <p>Optimized UI elements to enhance performance and reusability.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-shield-alt"></i>
+      <h2>Secure Authentication</h2>
+      <p>Integrated with Auth0 for authentication and role-based access.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fas fa-tachometer-alt"></i>
+      <h2>High Performance</h2>
+      <p>Leverages lazy loading and ahead-of-time compilation for speed.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Why Choose Angular POC?</h2>
+    <p>
+      Our Angular POC provides a **structured approach to building enterprise-grade applications** with
+      **modularity, scalability, and security** in mind.
+    </p>
+    <ul>
+      <li><i class="fas fa-check-circle"></i> Designed for scalability with state management</li>
+      <li><i class="fas fa-check-circle"></i> Built with performance optimizations like lazy loading</li>
+      <li><i class="fas fa-check-circle"></i> Secure authentication and API protection</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions? Reach out to us and let's build something great together!</p>
+    <button>📩 Contact Us</button>
+  </section>
+</div>

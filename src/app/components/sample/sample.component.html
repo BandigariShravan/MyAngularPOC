@@ -1,0 +1,10 @@
+<h3>Latest Posts</h3>
+<app-pagination></app-pagination>
+<ul>
+    <li *ngFor="let item of items; let i = index">
+        
+        <strong><span class="count">{{ i + 1 }}.</span> {{ item.title }}</strong>
+        <p>{{ item.body }}</p>
+    </li>
+</ul>
+<app-pagination></app-pagination>
